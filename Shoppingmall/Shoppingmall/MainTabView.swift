@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    @State private var isLandscape: Bool = false
+    
     var body: some View {
         TabView {
             HomeView()
@@ -20,6 +23,7 @@ struct MainTabView: View {
                     title: { Text("catalog") },
                     icon: { Image("CatalogImage") }
                 ) }
+                .environment(\.isLandscape, isLandscape)
             BonusView()
                 .tabItem { Label(
                     title: { Text("bonus") },
@@ -30,6 +34,12 @@ struct MainTabView: View {
                     title: { Text("menu") },
                     icon: { Image("MenuImage") }
                 ) }
+        }
+        .onAppear(perform: {
+            UITabBarItem.appearance().setTitleTextAttributes([.font : UIFont(name: "GraphikTrial-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12)], for: [])
+        })
+        .onInterfaceOrientationChange { orientation in
+            isLandscape = orientation.isLandscape
         }
     }
 }
