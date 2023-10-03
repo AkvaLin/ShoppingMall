@@ -15,6 +15,7 @@
 		F6BF5A002ACC7484004C1974 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF59FF2ACC7484004C1974 /* CatalogView.swift */; };
 		F6BF5A022ACC748E004C1974 /* BonusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF5A012ACC748E004C1974 /* BonusView.swift */; };
 		F6BF5A042ACC7497004C1974 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF5A032ACC7497004C1974 /* MenuView.swift */; };
+		F6BF5A062ACC7F8E004C1974 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6BF5A052ACC7F8E004C1974 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F6BF59FF2ACC7484004C1974 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		F6BF5A012ACC748E004C1974 /* BonusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusView.swift; sourceTree = "<group>"; };
 		F6BF5A032ACC7497004C1974 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F6BF5A052ACC7F8E004C1974 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F65D7B5A2ACAE36B008F1EE7 /* ShoppingmallApp.swift */,
 				F65D7B5C2ACAE36B008F1EE7 /* MainTabView.swift */,
 				F65D7B5E2ACAE36C008F1EE7 /* Assets.xcassets */,
+				F6BF5A052ACC7F8E004C1974 /* Localizable.xcstrings */,
 				F65D7B602ACAE36C008F1EE7 /* Preview Content */,
 			);
 			path = Shoppingmall;
@@ -292,6 +295,7 @@
 			files = (
 				F65D7B622ACAE36C008F1EE7 /* Preview Assets.xcassets in Resources */,
 				F65D7B5F2ACAE36C008F1EE7 /* Assets.xcassets in Resources */,
+				F6BF5A062ACC7F8E004C1974 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -423,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

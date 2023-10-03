@@ -11,17 +11,23 @@ struct MainTabView: View {
     var body: some View {
         TabView {
             HomeView()
-                .tabItem { Text("Home") }
+                .tabItem { Text("home") }
             CatalogView()
-                .tabItem { Text("Catalog") }
+                .tabItem { Text("catalog") }
             BonusView()
-                .tabItem { Text("Bonus") }
+                .tabItem { Text("bonus") }
             MenuView()
-                .tabItem { Text("Menu") }
+                .tabItem { Text("menu") }
         }
     }
 }
 
-#Preview {
+#Preview("Eng") {
     MainTabView()
+        .environment(\.locale, .init(identifier: "en"))
+}
+
+#Preview("Rus") {
+    MainTabView()
+        .environment(\.locale, .init(identifier: "ru"))
 }
