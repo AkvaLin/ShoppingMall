@@ -53,3 +53,8 @@ struct MainTabView: View {
     MainTabView()
         .environment(\.locale, .init(identifier: "ru"))
 }
+
+#Preview("Dark") {
+    MainTabView()
+        .preferredColorScheme(.dark)
+}

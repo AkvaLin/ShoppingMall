@@ -13,7 +13,7 @@ struct CatalogView: View {
     
     var body: some View {
         VStack {
-            Text("Каталог")
+            Text("catalog")
                 .font(
                     Font.custom("GraphikTrial-Regular", size: 24)
                 )
@@ -62,6 +62,12 @@ struct CatalogView: View {
     }
 }
 
-#Preview {
+#Preview("Light") {
     CatalogView()
+        .preferredColorScheme(.light)
+}
+
+#Preview("Dark") {
+    CatalogView()
+        .preferredColorScheme(.dark)
 }
