@@ -77,9 +77,8 @@
 		F65D7B592ACAE36B008F1EE7 /* Shoppingmall */ = {
 			isa = PBXGroup;
 			children = (
+				F6FE5B562ACED51700C4AF47 /* Application */,
 				F6BF59E82ACC7249004C1974 /* Modules */,
-				F65D7B5A2ACAE36B008F1EE7 /* ShoppingmallApp.swift */,
-				F65D7B5C2ACAE36B008F1EE7 /* MainTabView.swift */,
 				F6C2EAC92ACCD6AE00755DAB /* Support */,
 				F6C2EABE2ACC884400755DAB /* Resources */,
 				F65D7B602ACAE36C008F1EE7 /* Preview Content */,
@@ -280,6 +279,15 @@
 				F6C2EACC2ACCD7A900755DAB /* EnvironmentKeys.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		F6FE5B562ACED51700C4AF47 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F65D7B5A2ACAE36B008F1EE7 /* ShoppingmallApp.swift */,
+				F65D7B5C2ACAE36B008F1EE7 /* MainTabView.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
