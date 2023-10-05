@@ -1,6 +1,54 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "allow" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разрешить"
+          }
+        }
+      }
+    },
+    "allowNotifications" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow notifications to find out about accrued bonuses and special offers"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разрешите уведомления,  чтобы узнавать о начисленных  бонусах и специальных предложениях"
+          }
+        }
+      }
+    },
+    "bePart" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Become a part of the Shoppingmall community and earn points"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Станьте частью сообщества Shoppingmall и получайте баллы"
+          }
+        }
+      }
+    },
     "bonus" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -69,6 +117,22 @@
         }
       }
     },
+    "findOutFirst" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find out first"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Узнавайте первыми"
+          }
+        }
+      }
+    },
     "food" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -113,6 +177,22 @@
         }
       }
     },
+    "later" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Later"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Позже"
+          }
+        }
+      }
+    },
     "menu" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -126,6 +206,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Меню"
+          }
+        }
+      }
+    },
+    "registration" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registration"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Регистрация"
           }
         }
       }
@@ -147,6 +243,22 @@
         }
       }
     },
+    "shoppingAndRecreation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shopping and recreation"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шоппинг и отдых"
+          }
+        }
+      }
+    },
     "shops" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -160,6 +272,70 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Магазины"
+          }
+        }
+      }
+    },
+    "signIn" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign in"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "У меня уже есть аккаунт"
+          }
+        }
+      }
+    },
+    "signUp" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign up"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Зарегистрироваться"
+          }
+        }
+      }
+    },
+    "skip" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустить"
+          }
+        }
+      }
+    },
+    "specialPrivileges" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Special privileges"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Особые привилегии"
           }
         }
       }

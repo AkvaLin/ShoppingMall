@@ -25,31 +25,31 @@ struct CatalogView: View {
                 VStack(spacing: 8) {
                     HStack(spacing: 8) {
                         CatalogItemView(label: "shops") {
-                            Color(red: 0.95, green: 0.69, blue: 0.67)
+                            Color(.coralPink)
                         }
                         CatalogItemView(label: "food") {
-                            Image("FoodBackground")
+                            Image(.foodBackground)
                                 .resizable()
                         }
                     }
                     HStack(spacing: 8) {
                         CatalogItemView(label: "entertainment") {
-                            Image("EntertainmentBackground")
+                            Image(.entertainmentBackground)
                                 .resizable()
                         }
                         
                         CatalogItemView(label: "services") {
-                            Image("ServicesBackground")
+                            Image(.servicesBackground)
                                 .resizable()
                         }
                     }
                     HStack(spacing: 8) {
                         CatalogItemView(label: "sport") {
-                            Image("SportBackground")
+                            Image(.sportBackground)
                                 .resizable(resizingMode: /*@START_MENU_TOKEN@*/.stretch/*@END_MENU_TOKEN@*/)
                         }
                         CatalogItemView(label: "cinema") {
-                            Color(red: 0.24, green: 0.23, blue: 1)
+                            Color(.blue)
                         }
                     }
                 }

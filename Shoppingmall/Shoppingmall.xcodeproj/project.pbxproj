@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F62D64132ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D64122ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift */; };
+		F62D64152ACEAE7600C7D2D3 /* RegisterOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D64142ACEAE7600C7D2D3 /* RegisterOnboardingView.swift */; };
 		F65D7B5B2ACAE36B008F1EE7 /* ShoppingmallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D7B5A2ACAE36B008F1EE7 /* ShoppingmallApp.swift */; };
 		F65D7B5D2ACAE36B008F1EE7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D7B5C2ACAE36B008F1EE7 /* MainTabView.swift */; };
 		F65D7B5F2ACAE36C008F1EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65D7B5E2ACAE36C008F1EE7 /* Assets.xcassets */; };
 		F65D7B622ACAE36C008F1EE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65D7B612ACAE36C008F1EE7 /* Preview Assets.xcassets */; };
+		F6B25F982ACDFCFF0078940C /* SimpleOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B25F972ACDFCFF0078940C /* SimpleOnboardingView.swift */; };
 		F6BF59FE2ACC746F004C1974 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF59FD2ACC746F004C1974 /* HomeView.swift */; };
 		F6BF5A002ACC7484004C1974 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF59FF2ACC7484004C1974 /* CatalogView.swift */; };
 		F6BF5A022ACC748E004C1974 /* BonusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF5A012ACC748E004C1974 /* BonusView.swift */; };
@@ -20,14 +23,18 @@
 		F6C2EAC82ACCB17C00755DAB /* CatalogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2EAC72ACCB17C00755DAB /* CatalogItemView.swift */; };
 		F6C2EACB2ACCD73800755DAB /* InterfaceOrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2EACA2ACCD73800755DAB /* InterfaceOrientationManager.swift */; };
 		F6C2EACD2ACCD7A900755DAB /* EnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2EACC2ACCD7A900755DAB /* EnvironmentKeys.swift */; };
+		F6C2EAD12ACDF69500755DAB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2EAD02ACDF69500755DAB /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F62D64122ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOnboardingView.swift; sourceTree = "<group>"; };
+		F62D64142ACEAE7600C7D2D3 /* RegisterOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOnboardingView.swift; sourceTree = "<group>"; };
 		F65D7B572ACAE36B008F1EE7 /* Shoppingmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoppingmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65D7B5A2ACAE36B008F1EE7 /* ShoppingmallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingmallApp.swift; sourceTree = "<group>"; };
 		F65D7B5C2ACAE36B008F1EE7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F65D7B5E2ACAE36C008F1EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F65D7B612ACAE36C008F1EE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6B25F972ACDFCFF0078940C /* SimpleOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOnboardingView.swift; sourceTree = "<group>"; };
 		F6BF59FD2ACC746F004C1974 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F6BF59FF2ACC7484004C1974 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		F6BF5A012ACC748E004C1974 /* BonusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusView.swift; sourceTree = "<group>"; };
@@ -37,6 +44,7 @@
 		F6C2EAC72ACCB17C00755DAB /* CatalogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItemView.swift; sourceTree = "<group>"; };
 		F6C2EACA2ACCD73800755DAB /* InterfaceOrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceOrientationManager.swift; sourceTree = "<group>"; };
 		F6C2EACC2ACCD7A900755DAB /* EnvironmentKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKeys.swift; sourceTree = "<group>"; };
+		F6C2EAD02ACDF69500755DAB /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +203,10 @@
 		F6BF59F62ACC73E7004C1974 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6C2EAD02ACDF69500755DAB /* OnboardingView.swift */,
+				F6B25F972ACDFCFF0078940C /* SimpleOnboardingView.swift */,
+				F62D64122ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift */,
+				F62D64142ACEAE7600C7D2D3 /* RegisterOnboardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,11 +356,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6BF59FE2ACC746F004C1974 /* HomeView.swift in Sources */,
+				F6B25F982ACDFCFF0078940C /* SimpleOnboardingView.swift in Sources */,
 				F6C2EAC82ACCB17C00755DAB /* CatalogItemView.swift in Sources */,
+				F62D64152ACEAE7600C7D2D3 /* RegisterOnboardingView.swift in Sources */,
 				F6BF5A042ACC7497004C1974 /* MenuView.swift in Sources */,
+				F6C2EAD12ACDF69500755DAB /* OnboardingView.swift in Sources */,
 				F6C2EACD2ACCD7A900755DAB /* EnvironmentKeys.swift in Sources */,
 				F65D7B5D2ACAE36B008F1EE7 /* MainTabView.swift in Sources */,
 				F6C2EACB2ACCD73800755DAB /* InterfaceOrientationManager.swift in Sources */,
+				F62D64132ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift in Sources */,
 				F6BF5A022ACC748E004C1974 /* BonusView.swift in Sources */,
 				F6BF5A002ACC7484004C1974 /* CatalogView.swift in Sources */,
 				F65D7B5B2ACAE36B008F1EE7 /* ShoppingmallApp.swift in Sources */,
