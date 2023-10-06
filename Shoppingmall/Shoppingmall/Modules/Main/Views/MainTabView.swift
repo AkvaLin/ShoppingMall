@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Combine
 
 struct MainTabView: View {
     
-    @State private var isLandscape: Bool = false
+    @StateObject private var viewModel = MainTabViewModel()
     
     var body: some View {
         TabView {
@@ -23,7 +24,7 @@ struct MainTabView: View {
                     title: { Text("catalog") },
                     icon: { Image("CatalogImage") }
                 ) }
-                .environment(\.isLandscape, isLandscape)
+                .environment(\.isLandscape, viewModel.isLandscape)
             BonusView()
                 .tabItem { Label(
                     title: { Text("bonus") },
@@ -39,7 +40,10 @@ struct MainTabView: View {
             UITabBarItem.appearance().setTitleTextAttributes([.font : UIFont(name: "GraphikTrial-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12)], for: [])
         })
         .onInterfaceOrientationChange { orientation in
-            isLandscape = orientation.isLandscape
+            viewModel.isLandscape = orientation.isLandscape
+        }
+        .fullScreenCover(isPresented: $viewModel.showOnboarding) {
+            OnboardingView(isPresented: $viewModel.showOnboarding)
         }
     }
 }

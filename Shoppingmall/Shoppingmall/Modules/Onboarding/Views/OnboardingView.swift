@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    @Binding var isPresented: Bool
+    
     var body: some View {
         VStack {
             Image(.shoppingmallLabel)
@@ -27,7 +29,8 @@ struct OnboardingView: View {
             .tabViewStyle(.page)
             .padding(.top, 24)
             Button {
-                
+                isPresented = false
+                UserDefaults.standard.hasOnboarded = true
             } label: {
                 HStack {
                     Spacer()
@@ -47,5 +50,5 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView(isPresented: .constant(true))
 }
