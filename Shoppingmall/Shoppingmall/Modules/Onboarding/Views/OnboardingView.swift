@@ -23,7 +23,7 @@ struct OnboardingView: View {
                 SimpleOnboardingView(image: Image(.specialPrivileges),
                                      label: "specialPrivileges",
                                      backgroundColor: Color(.coralPink))
-                NotificationOnboardingView()
+                NotificationOnboardingView(isOnboardingPresented: $isPresented)
             }
             .shadow(radius: 10)
             .tabViewStyle(.page)

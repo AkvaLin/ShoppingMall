@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct RegisterOnboardingView: View {
+    
+    @State private var isLoginViewPresented = false
+    @State private var isRegisterViewPresented = false
+    @Binding var isOnboardingPresented: Bool
+    
     var body: some View {
         ZStack {
             Color.customDarkGray
@@ -39,7 +44,7 @@ struct RegisterOnboardingView: View {
                 .multilineTextAlignment(.center)
                 Group {
                     Button {
-                        
+                        isRegisterViewPresented = true
                     } label: {
                         Text("signUp")
                             .font(
@@ -54,7 +59,7 @@ struct RegisterOnboardingView: View {
                     }
                     .padding(.top, 32)
                     Button {
-                        
+                        isLoginViewPresented = true
                     } label: {
                         Text("signIn")
                             .font(
@@ -69,9 +74,26 @@ struct RegisterOnboardingView: View {
                 .padding(.horizontal, 24)
             }
         }
+        .fullScreenCover(isPresented: $isRegisterViewPresented) {
+            PhoneNumberView(title: "registration", subTitle: "one-timeCode", isPresented: $isRegisterViewPresented)
+                .onDisappear {
+                    dismissOnboarding()
+                }
+        }
+        .fullScreenCover(isPresented: $isLoginViewPresented) {
+            PhoneNumberView(title: "authorization", subTitle: "one-timeCode", isPresented: $isLoginViewPresented)
+                .onDisappear {
+                    dismissOnboarding()
+                }
+        }
+    }
+    
+    private func dismissOnboarding() {
+        isOnboardingPresented = false
+        UserDefaults.standard.hasOnboarded = true
     }
 }
 
 #Preview {
-    RegisterOnboardingView()
+    RegisterOnboardingView(isOnboardingPresented: .constant(true))
 }

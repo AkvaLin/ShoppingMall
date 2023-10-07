@@ -36,6 +36,22 @@
         }
       }
     },
+    "authorization" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Authorization"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Авторизация"
+          }
+        }
+      }
+    },
     "bePart" : {
       "localizations" : {
         "en" : {
@@ -294,7 +310,6 @@
       }
     },
     "one-timeCode" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

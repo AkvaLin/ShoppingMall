@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct NotificationOnboardingView: View {
+    
+    @Binding var isOnboardingPresented: Bool
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -54,7 +57,7 @@ struct NotificationOnboardingView: View {
                         }
                         .padding(.top, 32)
                         NavigationLink {
-                            RegisterOnboardingView()
+                            RegisterOnboardingView(isOnboardingPresented: $isOnboardingPresented)
                                 .navigationBarHidden(true)
                         } label: {
                             Text("later")
@@ -79,5 +82,5 @@ struct NotificationOnboardingView: View {
 }
 
 #Preview {
-    NotificationOnboardingView()
+    NotificationOnboardingView(isOnboardingPresented: .constant(true))
 }
