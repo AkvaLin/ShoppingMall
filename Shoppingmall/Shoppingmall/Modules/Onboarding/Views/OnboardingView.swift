@@ -38,7 +38,7 @@ struct OnboardingView: View {
                         .font(
                             Font.custom("GraphikTrial-Regular", size: 14)
                         )
-                        .foregroundStyle(Color(red: 0.75, green: 0.75, blue: 0.75))
+                        .foregroundStyle(Color(.lightGray))
                 }
             }
             .buttonStyle(.plain)

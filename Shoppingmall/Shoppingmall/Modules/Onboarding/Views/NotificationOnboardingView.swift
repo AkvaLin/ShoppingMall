@@ -41,19 +41,16 @@ struct NotificationOnboardingView: View {
                         Button {
                             
                         } label: {
-                            HStack {
-                                Spacer()
-                                Text("allow")
-                                    .font(
-                                        Font.custom("GraphikTrial-Regular", size: 16)
-                                            .weight(.medium)
-                                    )
-                                    .foregroundColor(Color(.blue))
-                                Spacer()
-                            }
-                            .padding(.vertical, 8)
-                            .background(.white)
-                            .clipShape(.rect(cornerRadius: 8))
+                            Text("allow")
+                                .font(
+                                    Font.custom("GraphikTrial-Regular", size: 16)
+                                        .weight(.medium)
+                                )
+                                .foregroundColor(Color(.blue))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 8)
+                                .background(.white)
+                                .clipShape(.rect(cornerRadius: 8))
                         }
                         .padding(.top, 32)
                         NavigationLink {

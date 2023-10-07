@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "allow" : {
       "localizations" : {
         "en" : {
@@ -100,6 +103,38 @@
         }
       }
     },
+    "done" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
+          }
+        }
+      }
+    },
+    "enterPhoneNumber" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter phone number"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите номер телефона"
+          }
+        }
+      }
+    },
     "entertainment" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -113,6 +148,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Развлечения"
+          }
+        }
+      }
+    },
+    "enterValidNumber" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It seems that you entered a phone number that does not meet the standards of the region. Enter the correct phone number or change the region."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кажется, вы ввели номер телефона, не соответствующий стандартам региона. Введите верный номер телефона или смените регион. "
           }
         }
       }
@@ -177,6 +228,22 @@
         }
       }
     },
+    "invalidNumber" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid number"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недопустимый номер"
+          }
+        }
+      }
+    },
     "later" : {
       "localizations" : {
         "en" : {
@@ -210,6 +277,39 @@
         }
       }
     },
+    "OK" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ok"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Ок"
+          }
+        }
+      }
+    },
+    "one-timeCode" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A one-time code will be sent to it"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "На него будет отправлен одноразовый код"
+          }
+        }
+      }
+    },
     "registration" : {
       "localizations" : {
         "en" : {
@@ -220,7 +320,7 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Регистрация"
           }
         }

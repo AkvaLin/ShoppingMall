@@ -10,7 +10,7 @@ import SwiftUI
 struct RegisterOnboardingView: View {
     var body: some View {
         ZStack {
-            Color.darkGray
+            Color.customDarkGray
             VStack {
                 Image(.registerOnboarding)
                     .resizable()
@@ -41,19 +41,16 @@ struct RegisterOnboardingView: View {
                     Button {
                         
                     } label: {
-                        HStack {
-                            Spacer()
-                            Text("signUp")
-                                .font(
-                                    Font.custom("GraphikTrial-Regular", size: 16)
-                                        .weight(.medium)
-                                )
-                                .foregroundColor(Color(.blue))
-                            Spacer()
-                        }
-                        .padding(.vertical, 8)
-                        .background(.white)
-                        .clipShape(.rect(cornerRadius: 8))
+                        Text("signUp")
+                            .font(
+                                Font.custom("GraphikTrial-Regular", size: 16)
+                                    .weight(.medium)
+                            )
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(Color(.blue))
+                            .padding(.vertical, 8)
+                            .background(.white)
+                            .clipShape(.rect(cornerRadius: 8))
                     }
                     .padding(.top, 32)
                     Button {

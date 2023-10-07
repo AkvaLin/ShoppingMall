@@ -26,6 +26,9 @@
 		F6C2EACB2ACCD73800755DAB /* InterfaceOrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2EACA2ACCD73800755DAB /* InterfaceOrientationManager.swift */; };
 		F6C2EACD2ACCD7A900755DAB /* EnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2EACC2ACCD7A900755DAB /* EnvironmentKeys.swift */; };
 		F6C2EAD12ACDF69500755DAB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2EAD02ACDF69500755DAB /* OnboardingView.swift */; };
+		F6CE277F2AD1D568002BFC24 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE277E2AD1D568002BFC24 /* PhoneNumberView.swift */; };
+		F6CE27832AD1EB3F002BFC24 /* PhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE27822AD1EB3F002BFC24 /* PhoneNumberViewModel.swift */; };
+		F6FD348D2AD2057D00A73E99 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = F6FD348C2AD2057D00A73E99 /* iPhoneNumberField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,8 @@
 		F6C2EACA2ACCD73800755DAB /* InterfaceOrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceOrientationManager.swift; sourceTree = "<group>"; };
 		F6C2EACC2ACCD7A900755DAB /* EnvironmentKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKeys.swift; sourceTree = "<group>"; };
 		F6C2EAD02ACDF69500755DAB /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F6CE277E2AD1D568002BFC24 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		F6CE27822AD1EB3F002BFC24 /* PhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FD348D2AD2057D00A73E99 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +319,22 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		F6CE27802AD1EB1C002BFC24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6CE277E2AD1D568002BFC24 /* PhoneNumberView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6CE27812AD1EB2A002BFC24 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F6CE27822AD1EB3F002BFC24 /* PhoneNumberViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F6FE5B562ACED51700C4AF47 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +346,8 @@
 		F6FE5B572ACED54800C4AF47 /* RegistrationAndAuthorization */ = {
 			isa = PBXGroup;
 			children = (
+				F6CE27802AD1EB1C002BFC24 /* Views */,
+				F6CE27812AD1EB2A002BFC24 /* ViewModels */,
 			);
 			path = RegistrationAndAuthorization;
 			sourceTree = "<group>";
@@ -344,6 +368,9 @@
 			dependencies = (
 			);
 			name = Shoppingmall;
+			packageProductDependencies = (
+				F6FD348C2AD2057D00A73E99 /* iPhoneNumberField */,
+			);
 			productName = Shoppingmall;
 			productReference = F65D7B572ACAE36B008F1EE7 /* Shoppingmall.app */;
 			productType = "com.apple.product-type.application";
@@ -373,6 +400,9 @@
 				ru,
 			);
 			mainGroup = F65D7B4E2ACAE36B008F1EE7;
+			packageReferences = (
+				F6FD348B2AD2057D00A73E99 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			productRefGroup = F65D7B582ACAE36B008F1EE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -415,6 +445,8 @@
 				F684A51F2ACFDFBB00461C34 /* MainTabViewModel.swift in Sources */,
 				F6BF5A022ACC748E004C1974 /* BonusView.swift in Sources */,
 				F6BF5A002ACC7484004C1974 /* CatalogView.swift in Sources */,
+				F6CE277F2AD1D568002BFC24 /* PhoneNumberView.swift in Sources */,
+				F6CE27832AD1EB3F002BFC24 /* PhoneNumberViewModel.swift in Sources */,
 				F65D7B5B2ACAE36B008F1EE7 /* ShoppingmallApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +657,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6FD348B2AD2057D00A73E99 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6FD348C2AD2057D00A73E99 /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6FD348B2AD2057D00A73E99 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F65D7B4F2ACAE36B008F1EE7 /* Project object */;
 }
