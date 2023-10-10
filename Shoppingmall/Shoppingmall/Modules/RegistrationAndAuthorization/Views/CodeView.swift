@@ -30,19 +30,10 @@ struct CodeView: View {
                     Text("enterCode")
                         .font(.custom("GraphikTrial-Regular", size: 16))
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .clipShape(.rect(cornerRadius: 8))
-                        .padding(.top, 16)
-                    TextField("012345", text: $viewModel.code)
-                        .font(.custom("GraphikTrial-Regular", size: 14))
+                    LightGrayRoundedTextField("012345", text: $viewModel.code)
                         .foregroundStyle(viewModel.isCodeValid ? (colorScheme == .light ? .black : .white) : .red)
                         .keyboardType(.numberPad)
                         .textContentType(.oneTimeCode)
-                        .padding(.vertical, 8.5)
-                        .padding(.horizontal, 16)
-                        .background(colorScheme == .light ? Color(red: 0.96,
-                                                                  green: 0.96,
-                                                                  blue: 0.96) : .clear)
-                        .clipShape(.rect(cornerRadius: 8))
                         .padding(.top, 16)
                         .onReceive(Just(viewModel.code)) { newValue in
                             var filtered = newValue.filter { "0123456789".contains($0) }
@@ -68,20 +59,15 @@ struct CodeView: View {
                     .font(.custom("GraphikTrial-Regular", size: 15))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 8)
-                    Button {
+                    BlueButton {
                         viewModel.getCode(seconds: 15)
                     } label: {
                         if viewModel.isInitialCodeSend {
                             Text("sendAgain")
-                                .frame(maxWidth: .infinity)
                         } else {
                             Text("send")
-                                .frame(maxWidth: .infinity)
                         }
                     }
-                    .tint(Color(.customBlue))
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.roundedRectangle(radius: 8))
                     .disabled(viewModel.sendButtonDisabled || viewModel.codeSended)
                     .padding(.top, 48)
                 }

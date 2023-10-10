@@ -66,15 +66,11 @@ struct PhoneNumberView: View {
                         .foregroundStyle(Color(.customLightGray))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 8)
-                    Button {
+                    BlueButton {
                         
                     } label: {
                         Text("done")
-                            .frame(maxWidth: .infinity)
                     }
-                    .tint(Color(.customBlue))
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.roundedRectangle(radius: 8))
                     .disabled(!viewModel.isDoneButtonActive)
                     .padding(.top, 48)
                     .onTapGesture {
