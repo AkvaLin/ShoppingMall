@@ -19,7 +19,7 @@ struct OnboardingView: View {
             TabView {
                 SimpleOnboardingView(image: Image(.shoppingOnboarding),
                                      label: "shoppingAndRecreation",
-                                     backgroundColor: Color(.blue))
+                                     backgroundColor: Color(.customBlue))
                 SimpleOnboardingView(image: Image(.specialPrivileges),
                                      label: "specialPrivileges",
                                      backgroundColor: Color(.coralPink))
@@ -38,7 +38,7 @@ struct OnboardingView: View {
                         .font(
                             Font.custom("GraphikTrial-Regular", size: 14)
                         )
-                        .foregroundStyle(Color(.lightGray))
+                        .foregroundStyle(Color(.customLightGray))
                 }
             }
             .buttonStyle(.plain)

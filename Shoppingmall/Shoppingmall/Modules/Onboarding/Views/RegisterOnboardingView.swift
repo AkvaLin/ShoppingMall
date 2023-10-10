@@ -52,7 +52,7 @@ struct RegisterOnboardingView: View {
                                     .weight(.medium)
                             )
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(Color(.blue))
+                            .foregroundColor(Color(.customBlue))
                             .padding(.vertical, 8)
                             .background(.white)
                             .clipShape(.rect(cornerRadius: 8))

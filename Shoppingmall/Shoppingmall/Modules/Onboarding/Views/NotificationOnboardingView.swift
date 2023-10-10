@@ -14,7 +14,7 @@ struct NotificationOnboardingView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(.blue)
+                Color(.customBlue)
                 VStack {
                     Image(.notificationOnboarding)
                         .resizable()
@@ -49,7 +49,7 @@ struct NotificationOnboardingView: View {
                                     Font.custom("GraphikTrial-Regular", size: 16)
                                         .weight(.medium)
                                 )
-                                .foregroundColor(Color(.blue))
+                                .foregroundColor(Color(.customBlue))
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 8)
                                 .background(.white)

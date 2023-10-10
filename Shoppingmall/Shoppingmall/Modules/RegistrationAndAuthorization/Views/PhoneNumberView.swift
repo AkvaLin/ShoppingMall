@@ -28,15 +28,16 @@ struct PhoneNumberView: View {
         NavigationView {
             VStack {
                 Text(title)
-                    .font(
-                        Font.custom("GraphikTrial-Regular", size: 16)
-                    )
+                    .font(.custom("GraphikTrial-Regular", size: 16))
                     .padding(.vertical, 40)
                     .multilineTextAlignment(.center)
                 Group {
                     Text("enterPhoneNumber")
+                        .font(.custom("GraphikTrial-Regular", size: 16))
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    iPhoneNumberField("(123) 456-78-90", text: $viewModel.phoneNumber, isEditing: $viewModel.isPhoneTextFieldEditing)
+                    iPhoneNumberField("(123) 456-78-90",
+                                      text: $viewModel.phoneNumber,
+                                      isEditing: $viewModel.isPhoneTextFieldEditing)
                         .font(UIFont(name: "GraphikTrial-Regular", size: 16) ?? UIFont.systemFont(ofSize: 16))
                         .maximumDigits(10)
                         .clearButtonMode(.whileEditing)
@@ -53,23 +54,25 @@ struct PhoneNumberView: View {
                         .textContentType(.telephoneNumber)
                         .padding(.vertical, 8.5)
                         .padding(.horizontal, 16)
-                        .background(colorScheme == .light ? Color(red: 0.96, green: 0.96, blue: 0.96) : .clear)
+                        .background(colorScheme == .light ? Color(red: 0.96, 
+                                                                  green: 0.96,
+                                                                  blue: 0.96) : .clear)
                         .clipShape(.rect(cornerRadius: 8))
                         .padding(.top, 16)
                     Text(subTitle)
                         .font(
                             Font.custom("GraphikTrial-Regular", size: 14)
                         )
-                        .foregroundStyle(Color(.lightGray))
+                        .foregroundStyle(Color(.customLightGray))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 8)
                     Button {
-                        isPresented = false
+                        
                     } label: {
                         Text("done")
                             .frame(maxWidth: .infinity)
                     }
-                    .tint(Color(.blue))
+                    .tint(Color(.customBlue))
                     .buttonStyle(.borderedProminent)
                     .buttonBorderShape(.roundedRectangle(radius: 8))
                     .disabled(!viewModel.isDoneButtonActive)
@@ -95,5 +98,7 @@ struct PhoneNumberView: View {
 }
 
 #Preview {
-    PhoneNumberView(title: "registration", subTitle: "one-timeCode", isPresented: .constant(true))
+    PhoneNumberView(title: "registration", 
+                    subTitle: "one-timeCode",
+                    isPresented: .constant(true))
 }
