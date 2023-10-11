@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "012345" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "012345"
+          }
+        }
+      }
     },
     "allow" : {
       "localizations" : {
@@ -131,6 +138,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово"
+          }
+        }
+      }
+    },
+    "e-mail" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e-mail"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e-mail"
+          }
+        }
+      }
+    },
+    "emailPlaceholder %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "john%@email.com"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ivan%@email.com"
           }
         }
       }
@@ -276,6 +315,9 @@
         }
       }
     },
+    "incorrectData" : {
+
+    },
     "invalidNumber" : {
       "localizations" : {
         "en" : {
@@ -288,6 +330,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Недопустимый номер"
+          }
+        }
+      }
+    },
+    "john" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "John"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Иван"
+          }
+        }
+      }
+    },
+    "johnson" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Johnson"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Иванович"
           }
         }
       }
@@ -321,6 +395,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Меню"
+          }
+        }
+      }
+    },
+    "name" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя"
           }
         }
       }
@@ -564,6 +654,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Фитнес"
+          }
+        }
+      }
+    },
+    "surname" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фамилия"
           }
         }
       }
