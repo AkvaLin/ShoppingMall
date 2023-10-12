@@ -25,76 +25,77 @@ struct PhoneNumberView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text(title)
+        VStack {
+            Text(title)
+                .font(.custom("GraphikTrial-Regular", size: 16))
+                .padding(.vertical, 40)
+                .multilineTextAlignment(.center)
+            Group {
+                Text("enterPhoneNumber")
                     .font(.custom("GraphikTrial-Regular", size: 16))
-                    .padding(.vertical, 40)
-                    .multilineTextAlignment(.center)
-                Group {
-                    Text("enterPhoneNumber")
-                        .font(.custom("GraphikTrial-Regular", size: 16))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    iPhoneNumberField("(123) 456-78-90",
-                                      text: $viewModel.phoneNumber,
-                                      isEditing: $viewModel.isPhoneTextFieldEditing)
-                        .font(UIFont(name: "GraphikTrial-Regular", size: 16) ?? UIFont.systemFont(ofSize: 16))
-                        .maximumDigits(10)
-                        .clearButtonMode(.whileEditing)
-                        .flagHidden(false)
-                        .flagSelectable(true)
-                        .onEdit(perform: { number in
-                            viewModel.isDoneButtonActive = number.isValidNumber
-                            if number.isValidNumber {
-                                viewModel.setNumber(number.phoneNumber?.numberString ?? "")
-                            }
-                        })
-                        .focused($isFocused)
-                        .keyboardType(.phonePad)
-                        .textContentType(.telephoneNumber)
-                        .padding(.vertical, 8.5)
-                        .padding(.horizontal, 16)
-                        .background(colorScheme == .light ? Color(red: 0.96, 
-                                                                  green: 0.96,
-                                                                  blue: 0.96) : .clear)
-                        .clipShape(.rect(cornerRadius: 8))
-                        .padding(.top, 16)
-                    Text(subTitle)
-                        .font(
-                            Font.custom("GraphikTrial-Regular", size: 14)
-                        )
-                        .foregroundStyle(Color(.customLightGray))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.top, 8)
-                    BlueButton {
-                        
-                    } label: {
-                        Text("done")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                iPhoneNumberField("(123) 456-78-90",
+                                  text: $viewModel.phoneNumber,
+                                  isEditing: $viewModel.isPhoneTextFieldEditing)
+                .font(UIFont(name: "GraphikTrial-Regular", size: 16) ?? UIFont.systemFont(ofSize: 16))
+                .maximumDigits(10)
+                .clearButtonMode(.whileEditing)
+                .flagHidden(false)
+                .flagSelectable(true)
+                .onEdit(perform: { number in
+                    viewModel.isDoneButtonActive = number.isValidNumber
+                    if number.isValidNumber {
+                        viewModel.setNumber(number.phoneNumber?.numberString ?? "")
                     }
-                    .disabled(!viewModel.isDoneButtonActive)
-                    .padding(.top, 48)
-                    .onTapGesture {
-                        if !viewModel.isDoneButtonActive {
-                            viewModel.showInvalidNumberAlert.toggle()
-                        }
+                })
+                .focused($isFocused)
+                .keyboardType(.phonePad)
+                .textContentType(.telephoneNumber)
+                .padding(.vertical, 8.5)
+                .padding(.horizontal, 16)
+                .background(colorScheme == .light ? Color(red: 0.96,
+                                                          green: 0.96,
+                                                          blue: 0.96) : .clear)
+                .clipShape(.rect(cornerRadius: 8))
+                .padding(.top, 16)
+                Text(subTitle)
+                    .font(
+                        Font.custom("GraphikTrial-Regular", size: 14)
+                    )
+                    .foregroundStyle(Color(.customLightGray))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.top, 8)
+                BlueButton {
+                    viewModel.isCodeViewPresented = true
+                } label: {
+                    Text("done")
+                }
+                .disabled(!viewModel.isDoneButtonActive)
+                .padding(.top, 48)
+                .onTapGesture {
+                    if !viewModel.isDoneButtonActive {
+                        viewModel.showInvalidNumberAlert.toggle()
                     }
                 }
-                .padding(.horizontal, 24)
-                Spacer()
             }
-            .onAppear {
-                isFocused = true
-            }
-            .alert("invalidNumber",
-                   isPresented: $viewModel.showInvalidNumberAlert,
-                   actions: { Button("OK", role: .cancel) { } },
-                   message: { Text("enterValidNumber") })
+            .padding(.horizontal, 24)
+            Spacer()
+        }
+        .onAppear {
+            isFocused = true
+        }
+        .alert("invalidNumber",
+               isPresented: $viewModel.showInvalidNumberAlert,
+               actions: { Button("OK", role: .cancel) { } },
+               message: { Text("enterValidNumber") })
+        .fullScreenCover(isPresented: $viewModel.isCodeViewPresented) {
+            CodeView(title: title)
         }
     }
 }
 
 #Preview {
-    PhoneNumberView(title: "registration", 
+    PhoneNumberView(title: "registration",
                     subTitle: "one-timeCode",
                     isPresented: .constant(true))
 }

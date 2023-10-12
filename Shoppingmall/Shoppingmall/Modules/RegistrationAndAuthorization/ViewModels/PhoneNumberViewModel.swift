@@ -13,6 +13,7 @@ class PhoneNumberViewModel: ObservableObject {
     @Published var isDoneButtonActive = false
     @Published var isPhoneTextFieldEditing = false
     @Published var showInvalidNumberAlert = false
+    @Published var isCodeViewPresented = false
 
     public var validNumber = ""
     
