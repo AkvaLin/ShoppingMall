@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "1500" : {
+
+    },
     "012345" : {
       "localizations" : {
         "ru" : {
@@ -272,6 +275,22 @@
         }
       }
     },
+    "gift" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We give 1500 points for registration"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Дарим 1500 баллов за регистрацию"
+          }
+        }
+      }
+    },
     "Hello, World!" : {
       "localizations" : {
         "ru" : {
@@ -295,6 +314,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дом"
+          }
+        }
+      }
+    },
+    "inClub" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Now you are in the club"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Теперь вы в клубе"
           }
         }
       }

@@ -15,6 +15,8 @@
 		F65D7B622ACAE36C008F1EE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65D7B612ACAE36C008F1EE7 /* Preview Assets.xcassets */; };
 		F684A51A2ACFDCA900461C34 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684A5192ACFDCA900461C34 /* UserDefaultsExtension.swift */; };
 		F684A51F2ACFDFBB00461C34 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684A51E2ACFDFBB00461C34 /* MainTabViewModel.swift */; };
+		F6873EC32AD97D7F005CE6BD /* ScoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6873EC22AD97D7F005CE6BD /* ScoringView.swift */; };
+		F6873EC52AD97E1A005CE6BD /* ScroingLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6873EC42AD97E1A005CE6BD /* ScroingLabelView.swift */; };
 		F68E5CB32AD52A4500CCB892 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E5CB22AD52A4500CCB892 /* CodeView.swift */; };
 		F68E5CB52AD5863300CCB892 /* CodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E5CB42AD5863300CCB892 /* CodeViewModel.swift */; };
 		F6B25F982ACDFCFF0078940C /* SimpleOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B25F972ACDFCFF0078940C /* SimpleOnboardingView.swift */; };
@@ -47,6 +49,8 @@
 		F65D7B612ACAE36C008F1EE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F684A5192ACFDCA900461C34 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		F684A51E2ACFDFBB00461C34 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		F6873EC22AD97D7F005CE6BD /* ScoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringView.swift; sourceTree = "<group>"; };
+		F6873EC42AD97E1A005CE6BD /* ScroingLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScroingLabelView.swift; sourceTree = "<group>"; };
 		F68E5CB22AD52A4500CCB892 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		F68E5CB42AD5863300CCB892 /* CodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewModel.swift; sourceTree = "<group>"; };
 		F6B25F972ACDFCFF0078940C /* SimpleOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOnboardingView.swift; sourceTree = "<group>"; };
@@ -141,9 +145,27 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		F6873EC02AD97D5F005CE6BD /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				F6873EC12AD97D6D005CE6BD /* Views */,
+			);
+			path = Scoring;
+			sourceTree = "<group>";
+		};
+		F6873EC12AD97D6D005CE6BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6873EC22AD97D7F005CE6BD /* ScoringView.swift */,
+				F6873EC42AD97E1A005CE6BD /* ScroingLabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F6BF59E82ACC7249004C1974 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F6873EC02AD97D5F005CE6BD /* Scoring */,
 				F684A51B2ACFDF8500461C34 /* Main */,
 				F6FE5B572ACED54800C4AF47 /* RegistrationAndAuthorization */,
 				F6BF59ED2ACC7371004C1974 /* Onboarding */,
@@ -467,8 +489,10 @@
 				F62D64132ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift in Sources */,
 				F684A51F2ACFDFBB00461C34 /* MainTabViewModel.swift in Sources */,
 				F6BF5A022ACC748E004C1974 /* BonusView.swift in Sources */,
+				F6873EC52AD97E1A005CE6BD /* ScroingLabelView.swift in Sources */,
 				F6BF5A002ACC7484004C1974 /* CatalogView.swift in Sources */,
 				F6CE277F2AD1D568002BFC24 /* PhoneNumberView.swift in Sources */,
+				F6873EC32AD97D7F005CE6BD /* ScoringView.swift in Sources */,
 				F6CE27832AD1EB3F002BFC24 /* PhoneNumberViewModel.swift in Sources */,
 				F65D7B5B2ACAE36B008F1EE7 /* ShoppingmallApp.swift in Sources */,
 				F6B587172AD5DB96007B4BA1 /* LightGrayRoundedTextField.swift in Sources */,
