@@ -24,12 +24,14 @@ struct ScroingLabelView: View {
             .padding(.leading, 35)
             .padding(.trailing, 87.5)
             .overlay {
-                Image(.diamond)
-                    .resizable()
-                    .aspectRatio(1.0, contentMode: .fit)
+                HStack {
+                    Spacer()
+                    Image(.diamond)
+                        .resizable()
+                        .aspectRatio(1.0, contentMode: .fit)
+                }
                     .padding(.trailing, 35)
                     .padding(.vertical, 17.5)
-                    .padding(.leading, 124)
             }
             .background { backgroundColor }
             .foregroundStyle(foregroundColor)
