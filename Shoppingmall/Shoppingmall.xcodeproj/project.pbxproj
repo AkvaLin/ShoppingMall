@@ -113,6 +113,81 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		F60473942AE14A9400622439 /* ProfileData */ = {
+			isa = PBXGroup;
+			children = (
+				F604739C2AE14AD000622439 /* Views */,
+				F604739B2AE14ACB00622439 /* ViewModels */,
+			);
+			path = ProfileData;
+			sourceTree = "<group>";
+		};
+		F60473952AE14A9B00622439 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				F604739A2AE14AC700622439 /* Views */,
+				F60473992AE14AC200622439 /* ViewModels */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		F60473962AE14AA600622439 /* PhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				F60473972AE14AAD00622439 /* Views */,
+				F60473982AE14AB300622439 /* ViewModels */,
+			);
+			path = PhoneNumber;
+			sourceTree = "<group>";
+		};
+		F60473972AE14AAD00622439 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6CE277E2AD1D568002BFC24 /* PhoneNumberView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F60473982AE14AB300622439 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F6CE27822AD1EB3F002BFC24 /* PhoneNumberViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F60473992AE14AC200622439 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F68E5CB42AD5863300CCB892 /* CodeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F604739A2AE14AC700622439 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F68E5CB22AD52A4500CCB892 /* CodeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F604739B2AE14ACB00622439 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F6B5871C2AD5E29E007B4BA1 /* ProfileDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F604739C2AE14AD000622439 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6B5871A2AD5E280007B4BA1 /* ProfileDataView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F65D7B4E2ACAE36B008F1EE7 = {
 			isa = PBXGroup;
 			children = (
@@ -383,26 +458,6 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		F6CE27802AD1EB1C002BFC24 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F6CE277E2AD1D568002BFC24 /* PhoneNumberView.swift */,
-				F68E5CB22AD52A4500CCB892 /* CodeView.swift */,
-				F6B5871A2AD5E280007B4BA1 /* ProfileDataView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F6CE27812AD1EB2A002BFC24 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				F6CE27822AD1EB3F002BFC24 /* PhoneNumberViewModel.swift */,
-				F68E5CB42AD5863300CCB892 /* CodeViewModel.swift */,
-				F6B5871C2AD5E29E007B4BA1 /* ProfileDataViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		F6FE5B562ACED51700C4AF47 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,10 +469,11 @@
 		F6FE5B572ACED54800C4AF47 /* RegistrationAndAuthorization */ = {
 			isa = PBXGroup;
 			children = (
+				F60473962AE14AA600622439 /* PhoneNumber */,
+				F60473952AE14A9B00622439 /* Code */,
+				F60473942AE14A9400622439 /* ProfileData */,
 				F6873EC02AD97D5F005CE6BD /* Scoring */,
 				F604738D2AE143D500622439 /* PromoCodeEntry */,
-				F6CE27802AD1EB1C002BFC24 /* Views */,
-				F6CE27812AD1EB2A002BFC24 /* ViewModels */,
 			);
 			path = RegistrationAndAuthorization;
 			sourceTree = "<group>";
