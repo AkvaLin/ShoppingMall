@@ -4,6 +4,15 @@
     "" : {
 
     },
+    "%@" : {
+
+    },
+    "1. " : {
+
+    },
+    "2. " : {
+
+    },
     "1500" : {
 
     },
@@ -81,6 +90,22 @@
         }
       }
     },
+    "birtday" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your birthday"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш День рождения"
+          }
+        }
+      }
+    },
     "bonus" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -111,6 +136,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каталог"
+          }
+        }
+      }
+    },
+    "children" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do you have children under 10 years old?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Есть ли у вас дети до 10 лет?"
           }
         }
       }
@@ -517,6 +558,22 @@
         }
       }
     },
+    "no" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет"
+          }
+        }
+      }
+    },
     "noPromoCode" : {
       "localizations" : {
         "en" : {
@@ -792,8 +849,40 @@
         }
       }
     },
+    "survey" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Survey"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Опрос"
+          }
+        }
+      }
+    },
     "Test" : {
 
+    },
+    "yes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Да"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

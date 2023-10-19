@@ -9,7 +9,7 @@ import Foundation
 
 class ProfileDataViewModel: ObservableObject {
     
-    @Published var form = Form()
+    @Published var form = FormatData()
     @Published var showNameError = false
     @Published var showSurnameError = false
     @Published var showEmailError = false
@@ -45,7 +45,7 @@ class ProfileDataViewModel: ObservableObject {
     }
 }
 
-struct Form {
+struct FormatData {
     var name = ""
     var surname = ""
     var email = ""

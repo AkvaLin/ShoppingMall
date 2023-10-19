@@ -22,7 +22,7 @@ struct ProfileDataView: View {
         VStack {
             Text("registration")
                 .font(.custom("GraphikTrial-Regular", size: 16))
-                .padding(.vertical, 32)
+                .padding(.vertical, 40)
                 .multilineTextAlignment(.center)
             Group {
                 Group {

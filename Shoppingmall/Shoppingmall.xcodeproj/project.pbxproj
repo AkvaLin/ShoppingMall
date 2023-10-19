@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F60473902AE143F300622439 /* PromoCodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F604738F2AE143F300622439 /* PromoCodeEntryView.swift */; };
 		F60473932AE1467000622439 /* PromoCodeEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60473922AE1467000622439 /* PromoCodeEntryViewModel.swift */; };
+		F60473A02AE1647600622439 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F604739F2AE1647600622439 /* SurveyView.swift */; };
+		F60473A32AE1659100622439 /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60473A22AE1659100622439 /* SurveyViewModel.swift */; };
+		F60473A72AE173D100622439 /* Graphik-Semibold-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = F60473A62AE173D100622439 /* Graphik-Semibold-Trial.otf */; };
 		F62D64132ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D64122ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift */; };
 		F62D64152ACEAE7600C7D2D3 /* RegisterOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D64142ACEAE7600C7D2D3 /* RegisterOnboardingView.swift */; };
 		F65D7B5B2ACAE36B008F1EE7 /* ShoppingmallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D7B5A2ACAE36B008F1EE7 /* ShoppingmallApp.swift */; };
@@ -44,6 +47,9 @@
 /* Begin PBXFileReference section */
 		F604738F2AE143F300622439 /* PromoCodeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodeEntryView.swift; sourceTree = "<group>"; };
 		F60473922AE1467000622439 /* PromoCodeEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodeEntryViewModel.swift; sourceTree = "<group>"; };
+		F604739F2AE1647600622439 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
+		F60473A22AE1659100622439 /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		F60473A62AE173D100622439 /* Graphik-Semibold-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Semibold-Trial.otf"; sourceTree = "<group>"; };
 		F62D64122ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOnboardingView.swift; sourceTree = "<group>"; };
 		F62D64142ACEAE7600C7D2D3 /* RegisterOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOnboardingView.swift; sourceTree = "<group>"; };
 		F65D7B572ACAE36B008F1EE7 /* Shoppingmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoppingmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +192,31 @@
 				F6B5871A2AD5E280007B4BA1 /* ProfileDataView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F604739D2AE1645900622439 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				F604739E2AE1646600622439 /* Views */,
+				F60473A12AE1657500622439 /* ViewModels */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		F604739E2AE1646600622439 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F604739F2AE1647600622439 /* SurveyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F60473A12AE1657500622439 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F60473A22AE1659100622439 /* SurveyViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F65D7B4E2ACAE36B008F1EE7 = {
@@ -441,6 +472,7 @@
 		F6C2EABF2ACCA2D400755DAB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F60473A62AE173D100622439 /* Graphik-Semibold-Trial.otf */,
 				F6C2EAC02ACCA34A00755DAB /* Graphik-Regular-Trial.otf */,
 			);
 			path = Fonts;
@@ -474,6 +506,7 @@
 				F60473942AE14A9400622439 /* ProfileData */,
 				F6873EC02AD97D5F005CE6BD /* Scoring */,
 				F604738D2AE143D500622439 /* PromoCodeEntry */,
+				F604739D2AE1645900622439 /* Survey */,
 			);
 			path = RegistrationAndAuthorization;
 			sourceTree = "<group>";
@@ -546,6 +579,7 @@
 				F65D7B622ACAE36C008F1EE7 /* Preview Assets.xcassets in Resources */,
 				F65D7B5F2ACAE36C008F1EE7 /* Assets.xcassets in Resources */,
 				F6C2EAC12ACCA35900755DAB /* Graphik-Regular-Trial.otf in Resources */,
+				F60473A72AE173D100622439 /* Graphik-Semibold-Trial.otf in Resources */,
 				F6BF5A062ACC7F8E004C1974 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,11 +591,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60473A02AE1647600622439 /* SurveyView.swift in Sources */,
 				F6BF59FE2ACC746F004C1974 /* HomeView.swift in Sources */,
 				F6B25F982ACDFCFF0078940C /* SimpleOnboardingView.swift in Sources */,
 				F6C2EAC82ACCB17C00755DAB /* CatalogItemView.swift in Sources */,
 				F62D64152ACEAE7600C7D2D3 /* RegisterOnboardingView.swift in Sources */,
 				F60473932AE1467000622439 /* PromoCodeEntryViewModel.swift in Sources */,
+				F60473A32AE1659100622439 /* SurveyViewModel.swift in Sources */,
 				F68E5CB52AD5863300CCB892 /* CodeViewModel.swift in Sources */,
 				F6BF5A042ACC7497004C1974 /* MenuView.swift in Sources */,
 				F6C2EAD12ACDF69500755DAB /* OnboardingView.swift in Sources */,

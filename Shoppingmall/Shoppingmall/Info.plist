@@ -4,7 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Resources/Fonts/Graphik-Regular-Trial.otf</string>
+		<string>Graphik-Regular-Trial.otf</string>
+		<string>Graphik-Semibold-Trial.otf</string>
 	</array>
 </dict>
 </plist>

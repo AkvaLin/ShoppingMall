@@ -15,8 +15,7 @@ struct PromoCodeEntryView: View {
         VStack {
             Text("getPointsFromFriend")
                 .font(.custom("GraphikTrial-Regular", size: 16))
-                .padding(.top, 40)
-                .padding(.bottom, 48)
+                .padding(.vertical, 40)
             Group {
                 Text("enterPromoCode")
                     .frame(maxWidth: .infinity, alignment: .leading)
