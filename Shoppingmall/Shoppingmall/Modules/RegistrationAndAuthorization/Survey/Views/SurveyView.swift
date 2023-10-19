@@ -40,7 +40,7 @@ struct SurveyView: View {
                 .foregroundStyle(.primary)
                 .padding(.bottom, 16)
                 if viewModel.showDatePicker {
-                    DatePicker("", selection: $viewModel.date, displayedComponents: .date)
+                    DatePicker("", selection: $viewModel.date, in: Date.now.addingTimeInterval(-3155760000)...Date.now, displayedComponents: .date)
                         .datePickerStyle(.graphical)
                 }
                 HStack {
