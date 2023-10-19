@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "1500" : {
 
     },
@@ -209,6 +212,22 @@
         }
       }
     },
+    "enterPromoCode" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the promo code"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите промокод"
+          }
+        }
+      }
+    },
     "entertainment" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -275,6 +294,54 @@
         }
       }
     },
+    "getItFromFriend" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can get it from a friend who already uses Shoppingmall"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы можете получить его у друга, который уже пользуется Shoppingmall"
+          }
+        }
+      }
+    },
+    "getPoints" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get points"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Получить баллы"
+          }
+        }
+      }
+    },
+    "getPointsFromFriend" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get points from a friend"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Получите баллы от друга"
+          }
+        }
+      }
+    },
     "gift" : {
       "localizations" : {
         "en" : {
@@ -285,7 +352,7 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Дарим 1500 баллов за регистрацию"
           }
         }
@@ -328,7 +395,7 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Теперь вы в клубе"
           }
         }
@@ -446,6 +513,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Имя"
+          }
+        }
+      }
+    },
+    "noPromoCode" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No promo code"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет промокода"
           }
         }
       }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60473902AE143F300622439 /* PromoCodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F604738F2AE143F300622439 /* PromoCodeEntryView.swift */; };
+		F60473932AE1467000622439 /* PromoCodeEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60473922AE1467000622439 /* PromoCodeEntryViewModel.swift */; };
 		F62D64132ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D64122ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift */; };
 		F62D64152ACEAE7600C7D2D3 /* RegisterOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D64142ACEAE7600C7D2D3 /* RegisterOnboardingView.swift */; };
 		F65D7B5B2ACAE36B008F1EE7 /* ShoppingmallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D7B5A2ACAE36B008F1EE7 /* ShoppingmallApp.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F604738F2AE143F300622439 /* PromoCodeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodeEntryView.swift; sourceTree = "<group>"; };
+		F60473922AE1467000622439 /* PromoCodeEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodeEntryViewModel.swift; sourceTree = "<group>"; };
 		F62D64122ACEAE3E00C7D2D3 /* NotificationOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOnboardingView.swift; sourceTree = "<group>"; };
 		F62D64142ACEAE7600C7D2D3 /* RegisterOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOnboardingView.swift; sourceTree = "<group>"; };
 		F65D7B572ACAE36B008F1EE7 /* Shoppingmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoppingmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F604738D2AE143D500622439 /* PromoCodeEntry */ = {
+			isa = PBXGroup;
+			children = (
+				F604738E2AE143E300622439 /* Views */,
+				F60473912AE1461700622439 /* ViewModels */,
+			);
+			path = PromoCodeEntry;
+			sourceTree = "<group>";
+		};
+		F604738E2AE143E300622439 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F604738F2AE143F300622439 /* PromoCodeEntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F60473912AE1461700622439 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F60473922AE1467000622439 /* PromoCodeEntryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F65D7B4E2ACAE36B008F1EE7 = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +194,6 @@
 		F6BF59E82ACC7249004C1974 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F6873EC02AD97D5F005CE6BD /* Scoring */,
 				F684A51B2ACFDF8500461C34 /* Main */,
 				F6FE5B572ACED54800C4AF47 /* RegistrationAndAuthorization */,
 				F6BF59ED2ACC7371004C1974 /* Onboarding */,
@@ -386,6 +414,8 @@
 		F6FE5B572ACED54800C4AF47 /* RegistrationAndAuthorization */ = {
 			isa = PBXGroup;
 			children = (
+				F6873EC02AD97D5F005CE6BD /* Scoring */,
+				F604738D2AE143D500622439 /* PromoCodeEntry */,
 				F6CE27802AD1EB1C002BFC24 /* Views */,
 				F6CE27812AD1EB2A002BFC24 /* ViewModels */,
 			);
@@ -475,6 +505,7 @@
 				F6B25F982ACDFCFF0078940C /* SimpleOnboardingView.swift in Sources */,
 				F6C2EAC82ACCB17C00755DAB /* CatalogItemView.swift in Sources */,
 				F62D64152ACEAE7600C7D2D3 /* RegisterOnboardingView.swift in Sources */,
+				F60473932AE1467000622439 /* PromoCodeEntryViewModel.swift in Sources */,
 				F68E5CB52AD5863300CCB892 /* CodeViewModel.swift in Sources */,
 				F6BF5A042ACC7497004C1974 /* MenuView.swift in Sources */,
 				F6C2EAD12ACDF69500755DAB /* OnboardingView.swift in Sources */,
@@ -493,6 +524,7 @@
 				F6BF5A002ACC7484004C1974 /* CatalogView.swift in Sources */,
 				F6CE277F2AD1D568002BFC24 /* PhoneNumberView.swift in Sources */,
 				F6873EC32AD97D7F005CE6BD /* ScoringView.swift in Sources */,
+				F60473902AE143F300622439 /* PromoCodeEntryView.swift in Sources */,
 				F6CE27832AD1EB3F002BFC24 /* PhoneNumberViewModel.swift in Sources */,
 				F65D7B5B2ACAE36B008F1EE7 /* ShoppingmallApp.swift in Sources */,
 				F6B587172AD5DB96007B4BA1 /* LightGrayRoundedTextField.swift in Sources */,
