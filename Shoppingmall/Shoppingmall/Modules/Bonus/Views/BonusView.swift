@@ -9,7 +9,30 @@ import SwiftUI
 
 struct BonusView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                HStack {
+                    Text("bonus")
+                        .font(.custom("GraphikTrial-Regular", size: 24))
+                    Spacer()
+                    ScroingLabelView(backgroundColor: .customBlue, foregroundColor: .white)
+                        .scaleEffect(CGSize(width: 0.60, height: 0.60))
+                        .padding(.trailing, -38)
+                        .frame(height: 8)
+                }
+                .padding(.horizontal, 24)
+                .padding(.vertical, 35)
+                List {
+                    MenuRow(image: Image(.diamond), title: "giftCatalog") { SurveyView() }
+                    MenuRow(image: Image(.diamond), title: "pointsForFriends") { SurveyView() }
+                    MenuRow(image: Image(.diamond), title: "myGifts") { SurveyView() }
+                    MenuRow(image: Image(.diamond), title: "historyOfOperations") { SurveyView() }
+                }
+                .listStyle(.plain)
+                .padding(.horizontal, 24)
+                Spacer()
+            }
+        }
     }
 }
 
