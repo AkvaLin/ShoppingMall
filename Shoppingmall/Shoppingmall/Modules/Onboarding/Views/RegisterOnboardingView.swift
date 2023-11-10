@@ -25,7 +25,6 @@ struct RegisterOnboardingView: View {
                     Text("registration")
                         .font(
                             Font.custom("GraphikTrial-Regular", size: 32)
-                                .weight(.medium)
                         )
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
@@ -35,7 +34,6 @@ struct RegisterOnboardingView: View {
                     Text("bePart")
                         .font(
                             Font.custom("GraphikTrial-Regular", size: 16)
-                                .weight(.medium)
                         )
                         .foregroundColor(.white.opacity(0.8))
                         .padding(.horizontal, 24)
@@ -49,7 +47,6 @@ struct RegisterOnboardingView: View {
                         Text("signUp")
                             .font(
                                 Font.custom("GraphikTrial-Regular", size: 16)
-                                    .weight(.medium)
                             )
                             .frame(maxWidth: .infinity)
                             .foregroundColor(Color(.customBlue))
@@ -64,7 +61,6 @@ struct RegisterOnboardingView: View {
                         Text("signIn")
                             .font(
                                 Font.custom("GraphikTrial-Regular", size: 14)
-                                    .weight(.medium)
                             )
                             .foregroundColor(.white)
                     }

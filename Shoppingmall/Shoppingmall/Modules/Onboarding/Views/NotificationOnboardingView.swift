@@ -23,7 +23,6 @@ struct NotificationOnboardingView: View {
                         Text("findOutFirst")
                             .font(
                                 Font.custom("GraphikTrial-Regular", size: 32)
-                                    .weight(.medium)
                             )
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
@@ -33,7 +32,6 @@ struct NotificationOnboardingView: View {
                         Text("allowNotifications")
                             .font(
                                 Font.custom("GraphikTrial-Regular", size: 16)
-                                    .weight(.medium)
                             )
                             .foregroundColor(.white.opacity(0.8))
                             .padding(.horizontal, 24)
@@ -47,7 +45,6 @@ struct NotificationOnboardingView: View {
                             Text("allow")
                                 .font(
                                     Font.custom("GraphikTrial-Regular", size: 16)
-                                        .weight(.medium)
                                 )
                                 .foregroundColor(Color(.customBlue))
                                 .frame(maxWidth: .infinity)
@@ -63,7 +60,6 @@ struct NotificationOnboardingView: View {
                             Text("later")
                                 .font(
                                     Font.custom("GraphikTrial-Regular", size: 14)
-                                        .weight(.medium)
                                 )
                                 .foregroundColor(.white)
                         }

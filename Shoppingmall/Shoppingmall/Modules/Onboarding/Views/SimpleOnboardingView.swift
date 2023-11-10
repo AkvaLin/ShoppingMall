@@ -32,7 +32,6 @@ struct SimpleOnboardingView: View {
                 Text(label)
                     .font(
                         Font.custom("GraphikTrial-Regular", size: 32)
-                            .weight(.medium)
                     )
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
